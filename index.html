@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notebook</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <p class="description">Notebook.uzb</p>
+
+  <h1 class="main-title">Добро пожаловать в мир НОУТБУКОВ!</h1>
+  <br></br>
+  <h2 class="subtitle">Здесь вы можете приобрести NoteBook выбрав свои критерии</h2>
+<br></br>
+  <div class="filter-group" id="matrix">
+    <h3>Тип матрицы:</h3>
+    <button class="option" data-group="matrix" data-value="IPS 15.6 FHD">IPS 15.6 FHD</button>
+    <button class="option" data-group="matrix" data-value="TN 15.6 FHD">TN 15.6 FHD</button>
+    <button class="option" data-group="matrix" data-value="VA 15.6 FHD">VA 15.6 FHD</button>
+  </div>
+<br></br>
+  <div class="filter-group" id="gpu">
+    <h3>Видеокарта:</h3>
+    <button class="option" data-group="gpu" data-value="Intel">Intel</button>
+    <button class="option" data-group="gpu" data-value="Nvidia GTX1650">Nvidia GTX1650</button>
+    <button class="option" data-group="gpu" data-value="AMD Radeon 3/5">AMD Radeon 3/5</button>
+  </div>
+<br></br>
+  <div class="filter-group" id="cpu">
+    <h3>Процессор:</h3>
+    <button class="option" data-group="cpu" data-value="Intel Core i3/i5">Intel Core i3/i5</button>
+    <button class="option" data-group="cpu" data-value="AMD Ryzen 3/5">AMD Ryzen 3/5</button>
+  </div>
+<br></br>
+  <div class="filter-group" id="storage">
+    <h3>Тип накопителя:</h3>
+    <button class="option" data-group="storage" data-value="256 ГБ SSD">256 ГБ SSD</button>
+    <button class="option" data-group="storage" data-value="512 ГБ SSD">512 ГБ SSD</button>
+    <button class="option" data-group="storage" data-value="1 ТБ SSD">1 ТБ SSD</button>
+  </div>
+<br></br>
+  <div class="filter-group" id="cpu">
+    <h3>Стоимость:</h3>
+    <button class="option" data-group="value" data-value="4 000 000 - 6 000 000 UZS">4 000 000 - 6 000 000 UZS</button>
+    <button class="option" data-group="value" data-value="6 000 000 - 7 500 000 UZS">6 000 000 - 7 500 000 UZS</button>
+    <button class="option" data-group="value" data-value="9 000 000 - 11 000 000 UZS">9 000 000 - 11 000 000 UZS</button>
+  </div>
+<br></br>
+  <button onclick="showLaptop()" class="option">Готово</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

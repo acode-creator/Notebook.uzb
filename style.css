@@ -1,0 +1,92 @@
+body {
+  font-family: Arial, sans-serif;
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0%   { background-color: lightgreen; }
+  50%  { background-color: #add8e6; }
+  100% { background-color: lightgreen; }
+}
+
+.option {
+  background: black;
+  color: white;
+}
+
+.description {
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  top: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+@keyframes pulse-title {
+  0%   { background-color: #0088cc; }
+  25%  { background-color: #800080; }
+  50% { background-color: #d62828; }
+  75% { background-color: #800080; }
+  100% { background-color: #0088cc; }
+}
+
+.main-title {
+  background: white;
+  border-radius: 20px;
+  animation: pulse-title 4s infinite;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+@keyframes pulse-text {
+  0%   { background-color: green; }
+  25%  { background-color: #ffa500; }
+  50% { background-color: #1199cc; }
+  75% { background-color: #ffa500; }
+  100% { background-color: green; }
+}
+
+.subtitle {
+  background: white;
+  border-radius: 20px;
+  text-align: center;
+  animation: pulse-text 5s infinite;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+.filter-group {
+  margin: 20px;
+  text-align: center;
+}
+
+.option.selected {
+  background-color: orange;
+  color: black;
+}
+
+#result {
+  margin: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  font-weight: bold;
+  display: none;
+}
